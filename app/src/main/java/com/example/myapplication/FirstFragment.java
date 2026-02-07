@@ -84,7 +84,7 @@ public class FirstFragment extends Fragment {
                 double valor = 0.0, valorPos = 0.0, pagado = 0.0, mensual = 0.0;
 
                 if (!data.isEmpty()) {
-                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
                     LocalDate fechaAnterior = LocalDate.parse(data.get(0).first, formatter);
                     double ingresoInicial = data.get(0).second;
                     valorPos += ingresoInicial;
